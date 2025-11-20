@@ -6,37 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		57BEA3942ECCB468007C47FC /* Larder Remote Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 57BEA38A2ECCB467007C47FC /* Larder Remote Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		57BEA3922ECCB468007C47FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57A7F9592ECC647100D6CB35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 57BEA3892ECCB467007C47FC;
-			remoteInfo = "Larder Remote Watch App";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		571E26292ECCAE2400BFF589 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				57BEA3942ECCB468007C47FC /* Larder Remote Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		57A7F9612ECC647100D6CB35 /* Larder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Larder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		57BEA38A2ECCB467007C47FC /* Larder Remote Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Larder Remote Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,22 +37,10 @@
 			path = Larder;
 			sourceTree = "<group>";
 		};
-		57BEA38B2ECCB467007C47FC /* Larder Remote Watch App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Larder Remote Watch App";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		57A7F95E2ECC647100D6CB35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57BEA3872ECCB467007C47FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				57A7F9632ECC647100D6CB35 /* Larder */,
-				57BEA38B2ECCB467007C47FC /* Larder Remote Watch App */,
 				57A7F9622ECC647100D6CB35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				57A7F9612ECC647100D6CB35 /* Larder.app */,
-				57BEA38A2ECCB467007C47FC /* Larder Remote Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,12 +76,10 @@
 				57A7F95D2ECC647100D6CB35 /* Sources */,
 				57A7F95E2ECC647100D6CB35 /* Frameworks */,
 				57A7F95F2ECC647100D6CB35 /* Resources */,
-				571E26292ECCAE2400BFF589 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				57BEA3932ECCB468007C47FC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				57A7F9632ECC647100D6CB35 /* Larder */,
@@ -131,28 +89,6 @@
 			);
 			productName = Larder;
 			productReference = 57A7F9612ECC647100D6CB35 /* Larder.app */;
-			productType = "com.apple.product-type.application";
-		};
-		57BEA3892ECCB467007C47FC /* Larder Remote Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57BEA3952ECCB468007C47FC /* Build configuration list for PBXNativeTarget "Larder Remote Watch App" */;
-			buildPhases = (
-				57BEA3862ECCB467007C47FC /* Sources */,
-				57BEA3872ECCB467007C47FC /* Frameworks */,
-				57BEA3882ECCB467007C47FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				57BEA38B2ECCB467007C47FC /* Larder Remote Watch App */,
-			);
-			name = "Larder Remote Watch App";
-			packageProductDependencies = (
-			);
-			productName = "Larder Remote Watch App";
-			productReference = 57BEA38A2ECCB467007C47FC /* Larder Remote Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,9 +102,6 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					57A7F9602ECC647100D6CB35 = {
-						CreatedOnToolsVersion = 26.1.1;
-					};
-					57BEA3892ECCB467007C47FC = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -188,20 +121,12 @@
 			projectRoot = "";
 			targets = (
 				57A7F9602ECC647100D6CB35 /* Larder */,
-				57BEA3892ECCB467007C47FC /* Larder Remote Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		57A7F95F2ECC647100D6CB35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57BEA3882ECCB467007C47FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,22 +143,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57BEA3862ECCB467007C47FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		57BEA3932ECCB468007C47FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 57BEA3892ECCB467007C47FC /* Larder Remote Watch App */;
-			targetProxy = 57BEA3922ECCB468007C47FC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		57A7F96A2ECC647200D6CB35 /* Debug */ = {
@@ -438,73 +348,6 @@
 			};
 			name = Release;
 		};
-		57BEA3962ECCB468007C47FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RDM6CLF45F;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Larder Remote";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.huizha.Larder;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huizha.Larder.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Debug;
-		};
-		57BEA3972ECCB468007C47FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RDM6CLF45F;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Larder Remote";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.huizha.Larder;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huizha.Larder.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -522,15 +365,6 @@
 			buildConfigurations = (
 				57A7F96D2ECC647200D6CB35 /* Debug */,
 				57A7F96E2ECC647200D6CB35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57BEA3952ECCB468007C47FC /* Build configuration list for PBXNativeTarget "Larder Remote Watch App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57BEA3962ECCB468007C47FC /* Debug */,
-				57BEA3972ECCB468007C47FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

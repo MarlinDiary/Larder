@@ -6,9 +6,6 @@
 //
 
 import SwiftUI
-#if os(iOS)
-import WatchConnectivity
-#endif
 
 #if canImport(UIKit)
 private let recipeDetailBackground = Color(uiColor: .systemGroupedBackground)
@@ -248,14 +245,6 @@ private struct StepPlaybackView: View {
 #endif
         }
 #if os(iOS)
-        .onAppear {
-            StepRemoteController.shared.registerAdvanceHandler {
-                advance()
-            }
-        }
-        .onDisappear {
-            StepRemoteController.shared.clearAdvanceHandler()
-        }
 #endif
     }
 
@@ -347,51 +336,6 @@ private func highlightedIngredientText(from text: String) -> Text {
 }
 
 private let numericHighlightCharacters: Set<Character> = Set("/.½⅓⅔¼¾⅛⅜⅝⅞")
-
-#if os(iOS)
-private final class StepRemoteController: NSObject {
-    static let shared = StepRemoteController()
-
-    private var session: WCSession?
-    private var advanceHandler: (() -> Void)?
-    private let queue = DispatchQueue.main
-
-    private override init() {
-        super.init()
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-            self.session = session
-        }
-    }
-
-    func registerAdvanceHandler(_ handler: (() -> Void)?) {
-        queue.async {
-            self.advanceHandler = handler
-        }
-    }
-
-    func clearAdvanceHandler() {
-        registerAdvanceHandler(nil)
-    }
-}
-
-extension StepRemoteController: WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
-    func sessionDidBecomeInactive(_ session: WCSession) {}
-    func sessionDidDeactivate(_ session: WCSession) {
-        session.activate()
-    }
-
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        guard message["action"] as? String == "nextStep" else { return }
-        queue.async { [weak self] in
-            self?.advanceHandler?()
-        }
-    }
-}
-#endif
 
 #if os(iOS)
 private extension View {
