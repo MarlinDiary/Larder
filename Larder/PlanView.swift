@@ -41,13 +41,17 @@ struct PlanView: View {
                             Label("Add to Groceries", systemImage: "cart.badge.plus")
                         }
 
+                        Divider()
+
                         Button(action: {}) {
                             Label("Scan Fridge", systemImage: "camera.viewfinder")
                         }
 
                         Button(action: {}) {
-                            Label("Generate Recipes for Next 7 Days", systemImage: "wand.and.stars")
+                            Label("Generate Recipes", systemImage: "wand.and.stars")
                         }
+
+                        Divider()
 
                         Button(action: {}) {
                             Label("Display Calories", systemImage: "flame")
